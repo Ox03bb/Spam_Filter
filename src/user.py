@@ -77,3 +77,4 @@ def predict_proba(text):
     vec = generate_vec(filter_words_arr)
     return model.predict_proba([vec])[0]
 
+
