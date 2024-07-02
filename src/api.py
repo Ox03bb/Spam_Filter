@@ -1,7 +1,6 @@
 import fastapi as api
 from typing import Union
 from pydantic import BaseModel
-import numpy as np
 
 import user
 
@@ -15,7 +14,7 @@ def page():
     return {"message": "Hello World"}
 
 
-@app.post("/test/")
+@app.post("/predict/")
 async def read_item(txt: mail = None ):
    
     pred = int(user.predict(txt.data))
